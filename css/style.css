@@ -1,0 +1,112 @@
+html, 
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/*layout*/
+.container {
+    display: grid;
+    gap: 1em;
+    margin: 1em;
+}
+
+header {
+    display: flex;
+    margin: 1em;
+    align-items: center;
+    gap: 0.2em;
+}
+
+.header-text {
+    margin-right: auto;
+    margin-left: 0;
+}
+
+.main {
+    background-image: url("/images/road.jpeg");
+    width: 100%;
+    height: 50vw;
+    background-size: cover;
+    position: relative;
+}
+
+.title {
+    margin: auto;
+    text-align: left;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+    color: white;
+
+}
+
+
+img {
+    border-radius: 2%;
+}
+
+
+footer {
+    background-color: #202020;
+    color: white;
+    padding: 2em;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 0.75em;
+}
+
+a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+    margin-left: 1em;
+}
+
+.view-more {
+    font-weight: bold;
+    text-decoration: underline;
+    text-transform: capitalize;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    padding: 1em 0;
+}
+
+.chat-img {
+    width: 2em;
+}
+
+.img {
+    width: 100%;
+    height: 300px; /* set a fixed height for all images */
+    background-size: cover; /* ensure that images fill their container */
+    border-radius: 2%;
+}
+
+
+
+
+
+.date {
+    opacity: 50%
+}
+
+.post-text {
+    text-align: left;
+}
+
+/*media query*/
+@media (min-width: 768px) {
+    .container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .main {
+        grid-column: 1/-1;
+    }
+
+
+}
